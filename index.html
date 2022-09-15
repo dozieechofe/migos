@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="migos.css">
+    <title>Migos home</title>
+</head>
+
+<body>
+    <section>
+        <header>
+
+            <nav>
+              <h1 class="logo">MIGOS</h1>
+
+                <div class="links" id="navLinks">
+
+                    <ul id="sidebar">
+                        <li><a href="./index.html" class="current">Home</a></li>
+                        <li><a href="./album.html">Album</a></li>
+                        <li><a href="./store.html">Merch</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        
+                    </ul>
+                   
+                </div>
+                <div class="container">
+                    <span id="bar1"></span>
+                    <span id="bar2"></span>
+                    <span id="bar3"></span>
+                </div>
+            </nav>
+            <div class="text-box">
+                <a href="./culture3.html" class="tb-cta">GET OUR LATEST ALBUM</a>
+            </div>
+
+            
+        </header>
+        
+    </section>
+    <section class="about-content tours">
+        <br>
+        <br>
+        <h2 class="about-head h2">Upcoming Tours</h2>
+        <br>
+        <br>
+        <div>
+            <div class="tour-row">
+                <span class="tour-item tour-date">JUL 16</span>
+                <span class="tour-item tour-city">DETROIT, MI</span>
+                <span class="tour-item tour-arena">DTE ENERGY MUSIC THEATRE</span>
+                <button type="button" class="btn tour-item tour-btn home-btn">Buy Tickets</button>
+
+            </div>
+
+            <div  class="tour-row">
+                <span class="tour-item tour-date">JUL 19</span>
+                <span class="tour-item tour-city">TORONTO, ON</span>
+                <span class="tour-item tour-arena">BUDWEISER STAGE</span>
+                <button type="button" class="btn tour-item tour-btn home-btn">Buy Tickets</button>
+
+            </div>
+
+            <div  class="tour-row">
+                <span class="tour-item tour-date">JUL 22</span>
+                <span class="tour-item tour-city">BRISTON, VA</span>
+                <span class="tour-item tour-arena">JIGGY LUBE VIBE</span>
+                <button type="button" class="btn tour-item tour-btn home-btn">Buy Tickets</button>
+
+            </div>
+            <div  class="tour-row">
+                <span class="tour-item tour-date">JUL 29</span>
+                <span class="tour-item tour-city">PHOENIX, AZ</span>
+                <span class="tour-item tour-arena">AK-CHIN PAVILLION</span>
+                <button type="button" class="btn tour-item tour-btn home-btn">Buy Tickets</button>
+
+            </div>
+            <div  class="tour-row">
+                <span class="tour-item tour-date">AUG 2</span>
+                <span class="tour-item tour-city">LAS VEGAS, NV</span>
+                <span class="tour-item tour-arena">T-MOBILE ARENA</span>
+                <button type="button" class="btn tour-item tour-btn home-btn">Buy Tickets</button>
+
+            </div>
+            <div  class="tour-row">
+                <span class="tour-item tour-date">AUG 27</span>
+                <span class="tour-item tour-city">CONCORD, CA</span>
+                <span class="tour-item tour-arena">CONCORD PAVILLION</span>
+                <button type="button" class="btn tour-item tour-btn home-btn">Buy Tickets</button>
+
+            </div>
+           
+        </div>
+    </section>
+
+    <footer>
+        <div class="main-footer">
+            <h1 class="logo">MIGOS</h1>
+            
+            <div class="links2">
+                <div class="col-1">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./album.html">Album</a></li>
+                        <li><a href="./store.html">Merch</a></li>
+                        <li><a href="./about.html">About</a></li>
+                    </ul>
+                </div>
+              
+            </div>
+          <div class="contact">
+              <a href="" target="_blank"><img src="./migos/spotify.png" alt=""></a>
+              <a href="" target="_blank"><img src="./migos/apple-music.png" alt=""></a>
+              <a href="" target="_blank"><img src="./migos/youtube2.png" alt=""></a>
+              <a href="" target="_blank"><img src="./migos/instagram-brands.svg" alt=""></a>
+              <a href="" target="_blank"><img src="./migos/facebook-brands.svg" alt=""></a>
+              <a href="" target="_blank"><img src="./migos/twitter-brands.svg" alt=""></a>
+             
+          </div>
+        
+  
+      
+          
+      </footer>
+      <script>
+        const container = document.querySelector(".container");
+        const sidebar = document.querySelector("#sidebar");
+        container.addEventListener("click", function() {
+            container.classList.toggle("change")
+            sidebar.classList.toggle("push")
+        }) 
+    </script>
+</body>
+</html>

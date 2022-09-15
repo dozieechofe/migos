@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(20, 20, 20);
+}
+body{
+    font-family: 'Lato', 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: black;
+    
+
+    background: aliceblue;
+}
+
+
+.tb-cta{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    justify-content: center;
+    font-weight: 500;
+}
+
+
+.text-box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 10px;
+}
+header{
+    background: url(./migos/migos5.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+   
+    background-size: cover;
+    height: 100vh;
+   background-position: center;
+}
+
+.col-1 ul li{
+    display: inline-block;
+    
+    justify-content: center;
+}
+
+.col-1 li{
+    list-style: none;
+    line-height: 30px;
+}
+.col-1 li a {
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+}
+
+
+.logo{
+   
+    color: white;
+    font-size: 30px;
+}
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    flex: 1;
+    text-align: right;
+}
+
+
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+    color: white;
+}
+
+.links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2b15f2;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.links ul li:hover::after{
+    width: 20%;
+}
+
+
+.container{
+    width: 45px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    pointer-events: none;
+    z-index:1;   
+    opacity: 0;
+}
+
+.container > span{
+    width: 80%;
+    height: 2px;
+    margin: 3px auto;
+    border-radius: 10px;
+    background: white;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 2px 2px #333;
+}
+
+.change #bar1{
+    transform: rotate(45deg) translate(5px, 7px);  
+    transition: all 0.4s ease-out; 
+}
+
+.change #bar2{
+    transform: translateX(-500px);
+    opacity: 0;
+    transition: transform 0.4s ease-out;
+}
+
+.change #bar3{
+    transform: rotate(-45deg) translate(4px,-7px);
+    transition: all 0.4s ease-out;
+    
+}
+
+
+.push#sidebar{
+    left: 0;
+    transition: all 0.4s ease-out;
+}
+
+
+small{
+    display: flex;
+    justify-content: center;
+}
+
+/*for about*/
+
+.current{
+    background-color: rgba(176, 175, 175, 0.5);
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+
+.about-content{
+    padding: 0 1.5em;
+    max-width: 1080px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about-content li{
+    list-style: none;
+}
+
+.about-head{
+    text-align: center;
+}
+
+.last-img{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+
+footer{
+    background-color: #082e39;
+    padding: 30px;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    padding: 0 30px;
+    margin-top: 5px;
+}
+
+.contact img{
+    width: 25px;
+    padding: 5px;
+}
+
+.home-btn{
+    color: rgb(245, 242, 242);
+    background-color: #0b8ac9;
+    border-radius: .3em;
+    border: none;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+.home-btn:hover{
+    background-color: #209cd8;
+}
+
+@media screen and (min-width: 915px){
+
+    .main-header{
+    background-image: url(./migos/migos555.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.65);
+    background-blend-mode: multiply;
+    padding-bottom: 100px;
+    padding-top: 5px;
+}
+
+.home-btn{
+    color: rgb(245, 242, 242);
+    background-color: #56ccf2;
+    border-radius: .3em;
+    border: none;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+}
+
+
+@media screen and (min-width: 1080px){
+.btn1 a{
+    font-size: 1.1em;
+}
+
+.home-btn{
+    color: rgb(245, 242, 242);
+    background-color: #56ccf2;
+    border-radius: .3em;
+    border: none;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+}
+
+
+
+
+/*for home*/
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn1{
+    text-align: center;
+    background-color: rgba(245, 243, 243, 0.1);
+    border: none;
+    padding: 6px 20px;
+    margin: 0;
+    border-radius: 3px;
+
+
+}
+.btn1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.tours{
+    font-size: 12px;
+}
+.h2{
+    font-size: 2.5em;
+}
+
+.tour-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 0.8em;
+    margin: 0.8em;
+}
+.tour-row:last-child{
+    border-bottom: none;
+}
+
+.tour-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+.tour-date{
+    font-weight: bold;
+    width: 11%;
+}
+.tour-city{
+    width: 24%;
+}
+
+.tour-arena{
+    width: 42%;
+}
+
+.tour-btn{
+    width: 19%;
+}
+
+/*for album page*/
+
+.tour-date2{
+
+    width: 8%;
+}
+.tour-city2{
+    width: 40%;
+}
+
+.tour-arena2{
+    width: 50%;
+}
+
+.tour-btn2{
+    width: 5%;
+    color: black;
+     font-size: 20px;
+     border-radius: 50%;
+     padding: 0;
+     border: none;
+     background-color: rgb(216, 218, 219);
+}
+
+.album-row{
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+.album-head{
+    margin: 40px 0
+}
+
+.flex-container{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+.album-name{
+    padding-top: 20px;
+}
+
+
+@media screen and (max-width:425px) {
+
+    
+.tour-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+.tour-date{
+    font-weight: bold;
+    width: 11%;
+}
+.tour-city{
+    width: 24%;
+}
+
+.tour-arena{
+    width: 42%;
+}
+
+.tour-btn{
+    width: 19%;
+}
+
+
+.tour-date2{
+    width: 4%;
+}
+.tour-city2{
+    width: 35%;
+}
+
+.tour-arena2{
+    width: 50%;
+}
+
+.tour-btn2{
+    width: 2%;
+}
+
+.home-btn{
+    color: rgb(245, 242, 242);
+    background-color: #56ccf2;
+    border-radius: .3em;
+    border: none;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+
+    
+}
+
+/*for store and album*/
+
+.merch{
+    margin: 10px 0px;
+}
+
+
+.album-item{
+    margin: 0px 30px 30px 30px ;
+}
+
+.album-name2{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.alb-det{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.alb-det2{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.album-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.home-btn1{
+
+    text-decoration: none;
+    margin-top: 5px;
+    color: rgb(245, 242, 242);
+    background-color: #1e4559;
+    border-radius: .3em;
+    border: none;
+    font-weight: bold;
+    padding: 4px 5px;
+}
+
+.home-btn1:hover{
+    background-color: #082e39;
+}
+
+.cart-head{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.cart-col{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(112, 112, 112);
+    margin-right: 1.5em;
+    padding-bottom: 8px;
+    margin-top: 10px;
+}
+
+.cart-row{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-item{
+    width: 45%;
+}
+
+.cart-p{
+    width: 20%;
+    font-size: 1.1em;
+}
+
+.cart-qua{
+    width: 35%;
+}
+
+.cart-it{
+    margin-left: .5em;
+    font-size: 1.1em;
+}
+
+.btn-d{
+    background-color: #f64949;
+    color: white;
+    border: none;
+    border-radius: .3em;
+    padding: 3px 6px;
+    border: aliceblue;
+}
+.btn-d:hover{
+    background-color: #5b0c0c;
+}
+
+.cart-inp{
+    height: 20px;
+    width: 50px;
+    padding: 0;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.cart-row:last-child{
+    border-bottom: 1px solid#585656;
+}
+.cart-row:last-child .cart-col{
+    border: none;
+}
+
+.cart-tot{
+    text-align: end;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.cart-tot1{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.cart-tot2{
+    font-size: 1.1em;
+}
+
+.p-btn{
+display: block;
+margin: 40px auto 80px auto;
+font-size: 1.2em;
+padding: 8px 15px;
+}
+
+.links2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tb-cta:hover{
+    background-color: rgba(176, 175, 175, 0.5);
+}
+
+@media screen and (max-width:768px) {
+
+    .main-footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .col-1 ul li{
+        padding: 5px;
+        justify-content: center;
+        text-align: center;
+    }
+    .links2{
+        text-align: center;
+    }
+   .contact{
+    display: flex;
+    justify-content: center;
+   }
+   
+    nav ul {
+        position: fixed; 
+        background-color: #070707fb;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 40%;
+        height: 400px;
+        left: -1000px;
+        z-index: 1;
+        list-style: none;
+        color: wheat;
+        top: 0;
+        border-radius: 2px;
+     }
+ 
+ 
+     .links {
+         display: flex;
+         flex-direction: column;
+         
+         width: 100%;
+         height: 100%;
+         text-align: center;
+     }
+
+     
+    .col-1 ul li{
+        display: inline-block;
+        padding: 5px;
+        justify-content: center;
+    }
+   
+    
+    .container {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
